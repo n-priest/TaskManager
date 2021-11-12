@@ -3,6 +3,8 @@
     width: 50%;
     border-radius: 3px;
     position: relative;
+    alignment: center;
+    margin-left: 22%;
 }
 .box-label {
     width: auto;
