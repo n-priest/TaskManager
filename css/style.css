@@ -1,13 +1,21 @@
+* {
+    font-family: "Georgia", sans-serif;
+}
+
 .main-box {
     border: solid 1px black;
     width: 50%;
-    border-radius: 3px;
+    border-radius: 10px;
     position: relative;
     alignment: center;
     margin-left: 22%;
+
 }
 .box-label {
     width: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 18px;
     text-align: center;
     background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)
 }
@@ -40,8 +48,8 @@
 
 .add-button {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)}
 .add-button {
-    margin-left: 40%;
-    padding: 15px 45px;
+    margin-left: 45%;
+    padding: 15px 25px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
