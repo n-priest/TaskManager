@@ -9,7 +9,7 @@
 .box-label {
     width: auto;
     text-align: center;
-    background-color: #059afd;
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)
 }
 
 .add-button {
@@ -36,4 +36,24 @@
     width: 90%;
 
 
+}
+
+.add-button {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)}
+.add-button {
+    margin-left: 40%;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.add-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }
