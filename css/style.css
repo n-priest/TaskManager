@@ -1,7 +1,13 @@
 * {
-    font-family: "Georgia", sans-serif;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    text-shadow: .1px .1px .1px #222;
 }
 
+#task-category {
+    horizontal-align: middle;
+    position: relative;
+    margin-left: 42%;
+}
 .main-box {
     border: solid 1px black;
     width: 50%;
@@ -31,9 +37,11 @@
 }
 .due-by {
     position: relative;
-    padding-left: 25%;
+    padding-left: 32%;
     padding-top: 2%;
     padding-bottom: 1%;
+    horizontal-align: center;
+
 }
 .details {
     position: relative;
@@ -48,11 +56,11 @@
 
 .add-button {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)}
 .add-button {
-    margin-left: 45%;
+    horizontal-align: center;
     padding: 15px 25px;
     text-align: center;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: 0.9s;
     background-size: 200% auto;
     color: white;
     box-shadow: 0 0 20px #eee;

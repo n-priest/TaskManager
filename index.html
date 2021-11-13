@@ -14,12 +14,26 @@
            value="2018-07-22"
            min="2018-01-01" max="2018-12-31">
     </div>
+
+    <form action="/action_page.php">
+        <label for="task-category"></label>
+        <select name="task-category" id="task-category">
+            <option value="school">Select Category</option>
+            <option value="school">School</option>
+            <option value="workout">Workout</option>
+            <option value="coding">Coding</option>
+            <option value="chores">Chores</option>
+            <option value="meal-prep">Meal Preparation</option>
+        </select>
+        <br><br>
+
+    </form>
     <textarea class="details"> Enter task details... </textarea>
 
 
     <button class="add-button"> Add
     </button>
-
+    </form>
 </div>
 </body>
 </html>
