@@ -7,8 +7,11 @@ const todoList = document.querySelector('.todo-list')
 
 //Event Listeners
 
-
+todoButton.addEventListener('click', addTodo);
 
 //Functions
 
-
+function addTodo(event) {
+    event.preventDefault();
+    console.log('hello');
+}
