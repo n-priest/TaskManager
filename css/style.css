@@ -21,7 +21,8 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 form input,
@@ -30,14 +31,19 @@ form button{
     font-size: 2rem;
     border: none;
     background: white;
-    border-radius: 4px;
-}
 
+}
+form input {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
 form button{
     color: dodgerblue;
     background: whitesmoke;
     cursor: pointer;
     transition: all 0.6s ease;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 form button:hover{
@@ -66,4 +72,99 @@ form button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+
+}
+.todo {
+    margin: .5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4px;
+    transition: all .5s ease;
+}
+.todo li{
+    flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+    background: dodgerblue;
+    color: black;
+    padding: 1rem;
+}
+.complete-btn {
+    background: greenyellow;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.trash-btn {
+    background: powderblue;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: .5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+/*CUSTOM SELECTOR */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+}
+
+/* Custom Select */
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+select {
+    color: #68686b;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+    padding: 1rem;
+    border-radius: 4px;
+}
+/* Arrow */
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #059afd;
+    cursor: pointer;
+    pointer-events: none;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
 }
